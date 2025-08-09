@@ -12,6 +12,9 @@
     align-items: center;
     height: 100vh;
   }
+  svg {
+    color: white;
+  }
   .container {
     background: #fff;
     padding: 32px 24px 40px;

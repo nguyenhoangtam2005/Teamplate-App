@@ -1,0 +1,180 @@
+  @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #f9fafb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .container {
+    background: #fff;
+    padding: 32px 24px 40px;
+    width: 360px;
+    border-radius: 16px;
+    box-shadow: 0 6px 15px rgb(0 0 0 / 0.1);
+    text-align: center;
+  }
+  .logo {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 16px;
+    background: #03292b; /* giả lập màu logo */
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* icon load spinner in svg */
+  .logo svg {
+    width: 24px;
+    height: 24px;
+    animation: spin 1.5s linear infinite;
+    fill: white;
+  }
+  @keyframes spin {
+    100% { transform: rotate(360deg);}
+  }
+  h1 {
+    font-weight: 600;
+    font-size: 24px;
+    color: #0c1217;
+    margin-bottom: 8px;
+  }
+  p.subtitle {
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 32px;
+  }
+  form {
+    text-align: left;
+  }
+  label {
+    font-weight: 600;
+    font-size: 14px;
+    color: #374151;
+    display: block;
+    margin-bottom: 6px;
+  }
+  .input-group {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .input-group input {
+    width: 100%;
+    padding: 12px 12px 12px 40px;
+    border-radius: 12px;
+    border: 1px solid #d1d5db;
+    font-size: 16px;
+    color: #111827;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  .input-group input:focus {
+    border-color: #0ea5e9;
+    box-shadow: 0 0 5px #0ea5e9;
+  }
+  .input-group svg {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    fill: #6b7280;
+  }
+  .forgot-password {
+    text-align: right;
+    margin-bottom: 24px;
+  }
+  .forgot-password a {
+    font-size: 14px;
+    color: #2563eb;
+    text-decoration: none;
+  }
+  .forgot-password a:hover {
+    text-decoration: underline;
+  }
+  button.continue {
+    width: 100%;
+    padding: 14px 0;
+    background: linear-gradient(90deg, #064e4e 0%, #064e4e 100%);
+    border: none;
+    border-radius: 16px;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 24px;
+    transition: background 0.3s;
+  }
+  button.continue:hover {
+    background: linear-gradient(90deg, #076969 0%, #0ea5e9 100%);
+  }
+  .create-account {
+    width: 100%;
+    padding: 14px 0;
+    background: #f3f4f6;
+    border: none;
+    border-radius: 16px;
+    color: #374151;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 16px;
+  }
+  .create-account:hover {
+    background: #e5e7eb;
+  }
+  .social-button {
+    width: 100%;
+    padding: 14px 0;
+    border: none;
+    border-radius: 16px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    gap: 10px;
+    user-select: none;
+  }
+  .social-apple {
+    background: #000;
+    color: #fff;
+  }
+  .social-google {
+    background: #fff;
+    color: #000;
+    border: 1px solid #d1d5db;
+  }
+  .social-apple:hover {
+    background: #333;
+  }
+  .social-google:hover {
+    background: #f3f4f6;
+  }
+  .social-button svg {
+    width: 20px;
+    height: 20px;
+  }
+  .footer-text {
+    font-size: 12px;
+    color: #6b7280;
+    margin-top: 24px;
+    line-height: 1.4;
+  }
+  .footer-text a {
+    color: #2563eb;
+    text-decoration: none;
+  }
+  .footer-text a:hover {
+    text-decoration: underline;
+  }

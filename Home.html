@@ -7,37 +7,50 @@
     <title>Document</title>
 </head>
 <body>
-     <section class="profile" aria-label="Home Appliance Service Profile">
-    <div class="profile__image-container" role="img" aria-label="Home appliance kitchen image"></div>
-    
-    <div class="profile__info">
-      <img
-        src="https://randomuser.me/api/portraits/men/45.jpg"
-        alt="Michael Anderson avatar"
-        class="profile__avatar"
-      />
-      <div>
-        <div class="profile__name">Michael Anderson</div>
-        <div class="profile__location">New York, USA</div>
-      </div>
-      <div class="profile__rating" aria-label="Rating 4.5 stars based on 58 reviews">
-        <div class="profile__rating-stars">★ ★ ★ ★ ☆</div>
-        <div>4.5 | 58 Reviews</div>
-      </div>
-    </div>
-
-    <p class="profile__description">
-      Michael Anderson’s Home Appliance Service offers a trusted source of expertise and reliability. With
-      years of experience in diagnosing and repairing a wide range of appliances, I am dedicated to
-      bringing you the best.
-    </p>
-
-    <div class="profile__button-container">
+    <div class="dashboard">
+    <header class="dashboard__header">
+      <div class="dashboard__user-info">
         <a href="index.html">
-      <button type="button" class="profile__button profile__button--budget">Ask for budget</button>
-      </a>
-      <button type="button" class="profile__button profile__button--book">Book Appointment</button>
-    </div>
-  </section>
+        <img src="https://cdn4.iconfinder.com/data/icons/logos-brands-7/512/google_logo-google_icongoogle-512.png" alt="User avatar" class="dashboard__avatar"></a>
+        <span class="dashboard__greeting">Hello,<br><strong>Sanusi Olamide</strong></span>
+      </div>
+      <div class="dashboard__icons">
+        <i class="dashboard__icon">🔔</i>
+        <i class="dashboard__icon">⚙️</i>
+        <i class="dashboard__icon">🏦</i>
+      </div>
+    </header>
+
+    <section class="account-card">
+      <div class="account-card__top">
+        <span class="account-card__number">214545536</span>
+        <span class="account-card__icon">📷</span>
+      </div>
+      <p class="account-card__type">Savings Account</p>
+      <p class="account-card__balance">NGN <strong>869,699.06</strong></p>
+    </section>
+
+    <section class="services">
+      <h3 class="services__title">Top services</h3>
+      <div class="services__grid">
+        <div class="service">
+          <div class="service__icon">📤</div>
+          <div class="service__label">Send money</div>
+        </div>
+        <div class="service">
+          <div class="service__icon">📱</div>
+          <div class="service__label">Buy airtime</div>
+        </div>
+        <div class="service">
+          <div class="service__icon">💾</div>
+          <div class="service__label">Buy data</div>
+        </div>
+        <div class="service">
+          <div class="service__icon">⚡</div>
+          <div class="service__label">Electricity</div>
+        </div>
+      </div>
+    </section>
+  </div>
 </body>
 </html>
